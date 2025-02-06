@@ -1,0 +1,10 @@
+/* Ensure smooth transitions for the mobile menu */
+#mobile-menu {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+#mobile-menu.open {
+  max-height: 500px; /* Adjust this value based on your content height */
+}
