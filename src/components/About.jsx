@@ -3,7 +3,10 @@ import aboutimg from "../assets/About/aboutimg.jpg";
 
 const About = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row h-screen lg:mt-1 mt-[500px]">
+    <div
+      className="flex flex-col-reverse md:flex-row h-screen lg:mt-1 mt-[500px]"
+      id="about"
+    >
       <div className="w-full md:w-2/5 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-white to-transparent opacity-100"></div>
         <img
@@ -28,13 +31,20 @@ const About = () => {
         </p>
         <h1 className="text-5xl font-bold text-primaryGreen mt-7">VISION</h1>
         <p className="text-lg text-gray-700">
-          To provide our customer's with high quality, reliable products and
-          services 100% on time.
+          To be a global leader in the machinery and equipment industry, known
+          for our cutting-edge technology, exceptional customer service, and
+          dedication to creating value for our stakeholders. We aspire to drive
+          progress in the industrial sector by offering solutions that not only
+          meet but exceed the expectations of our clients, contributing to a
+          more productive and sustainable future.
         </p>
         <h1 className="text-5xl font-bold text-primaryGreen mt-5">MISSION</h1>
         <p className="text-lg text-gray-700">
-          Minami Machineries supplies high quality and pre customized machines
-          at reasonable cost.
+          To deliver innovative and high-quality machinery and equipment
+          solutions that empower industries to achieve operational excellence.
+          We are committed to providing our clients with reliable, efficient,
+          and sustainable products, while fostering a culture of integrity,
+          safety, and continuous improvement.
         </p>
       </div>
     </div>

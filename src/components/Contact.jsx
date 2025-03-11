@@ -8,7 +8,7 @@ import {
 
 const Contact = () => {
   return (
-    <section className="bg-gray-100 py-16">
+    <section className="bg-gray-100 py-16 mt-20" id="contact">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:space-x-8">
           {/* Left Div */}
@@ -24,6 +24,10 @@ const Contact = () => {
             <div className="mb-4 flex items-center justify-center md:justify-start">
               <FaEnvelope className="inline-block mr-2 text-primaryGreen" />
               <span>sales-tech@mkminami.com.ph</span>
+            </div>
+            <div className="mb-4 flex items-center justify-center md:justify-start">
+              <FaEnvelope className="inline-block mr-2 text-primaryGreen" />
+              <span>jcorrales@mkminami.com.ph</span>
             </div>
             <div className="mb-4 flex items-center justify-center md:justify-start">
               <FaPhoneAlt className="inline-block mr-2 text-primaryGreen" />

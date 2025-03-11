@@ -43,7 +43,7 @@ const Products = () => {
       image: product3,
     },
     {
-      name: "MK-bp1888",
+      name: "MK-BP1888",
       category: "Ball Placer with Screen Printer",
       image: product4,
     },
@@ -58,7 +58,7 @@ const Products = () => {
       image: product6,
     },
     {
-      name: "Ball Inspection & Rework MK-BP5000IR",
+      name: "MK-BP5000IR",
       category: "Ball Inspection & Rework",
       image: product7,
     },
@@ -110,7 +110,10 @@ const Products = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center gap-6 mt-20 px-5">
+    <div
+      className="w-full flex flex-col items-center justify-center gap-6 mt-20 px-5"
+      id="products"
+    >
       {/* Header */}
       <div className="flex flex-col gap-3 self-start">
         <div className="flex items-center gap-2">
