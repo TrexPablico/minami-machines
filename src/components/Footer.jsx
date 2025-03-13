@@ -46,7 +46,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="w-full md:w-1/3 text-center md:text-left">
           <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
-          <p>Phone: 0917-5207550</p>
+          <p>Phone: 0495441684</p>
           <p>Email: sales-tech@mkminami.com.ph</p>
           <p>
             Address: Unit 307 The Centrale Building, Southpoint Subd. ,
