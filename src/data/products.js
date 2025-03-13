@@ -13,7 +13,7 @@ import product11 from "../assets/Products/img11.jpg";
 import product12 from "../assets/Products/img12.jpg";
 import product13 from "../assets/Products/img13.jpg";
 import product14 from "../assets/Products/img14.jpg";
-import product15 from "../assets/Products/img15.jpg";
+import product15 from "../assets/Products/img15.png";
 
 import altproduct1 from "../assets/Products/img01.png";
 
