@@ -1,12 +1,61 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   FaEnvelope,
   FaPhoneAlt,
   FaMapMarkerAlt,
   FaFacebook,
 } from "react-icons/fa";
+import toast, { Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Validation
+    const userName = form.current.user_name.value;
+    const userEmail = form.current.user_email.value;
+    const userMessage = form.current.user_message.value;
+
+    const nameRegex = /^[A-Za-z\s]{1,25}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{1,30}$/;
+
+    if (!nameRegex.test(userName)) {
+      toast.error("Invalid name. Only letters and spaces are allowed");
+      return;
+    }
+
+    if (!emailRegex.test(userEmail)) {
+      toast.error("Invalid email address.");
+      return;
+    }
+
+    emailjs
+      .sendForm("service_spkfe68", "template_sot8cyb", form.current, {
+        publicKey: "BXSmdNjmvAYfY_ACN",
+      })
+      .then(
+        () => {
+          toast.success("Message Sent", {
+            style: {
+              background: "orange",
+              color: "#fff",
+            },
+            iconTheme: {
+              primary: "#fff",
+              secondary: "orange",
+            },
+          });
+        },
+        (error) => {
+          toast.error("FAILED...", error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section className="bg-gray-100 py-16 mt-20" id="contact">
       <div className="container mx-auto px-4">
@@ -31,7 +80,7 @@ const Contact = () => {
             </div>
             <div className="mb-4 flex items-center justify-center md:justify-start">
               <FaPhoneAlt className="inline-block mr-2 text-primaryGreen" />
-              <span>0917-5207550</span>
+              <span>0495441684</span>
             </div>
             <div className="mb-4 flex items-center justify-center md:justify-start">
               <FaMapMarkerAlt className="inline-block mr-2 text-primaryGreen" />
@@ -54,7 +103,7 @@ const Contact = () => {
 
           {/* Right Div */}
           <div className="md:w-1/2 w-full p-4 bg-white rounded-lg shadow-md">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
@@ -65,6 +114,7 @@ const Contact = () => {
                 <input
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryGreen"
                   id="name"
+                  name="user_name"
                   type="text"
                   placeholder="Your Name"
                 />
@@ -79,6 +129,7 @@ const Contact = () => {
                 <input
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryGreen"
                   id="email"
+                  name="user_email"
                   type="email"
                   placeholder="Your Email"
                 />
@@ -93,6 +144,7 @@ const Contact = () => {
                 <textarea
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryGreen"
                   id="message"
+                  name="user_message"
                   placeholder="Your Message"
                 ></textarea>
               </div>
@@ -102,6 +154,7 @@ const Contact = () => {
               >
                 Send Message
               </button>
+              <Toaster />
             </form>
           </div>
         </div>

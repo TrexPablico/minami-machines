@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/Navbar/mklogo.jpg";
+import logo1 from "../assets/Navbar/mklogo1.png";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
@@ -10,7 +11,6 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "#about" },
     { name: "Products", href: "#products" },
-
     {
       name: "Affiliates",
       href: "#",
@@ -21,7 +21,7 @@ const Navbar = () => {
         },
         { name: "CKD", href: "https://www.ckd.co.jp/en/productinfo/" },
         {
-          name: "Kanoshoji Co., Ltd",
+          name: "Kano Engineering Co., Ltd.",
           href: "https://kano-web.co.jp/en/product.html",
         },
         {
@@ -42,7 +42,8 @@ const Navbar = () => {
   };
 
   const handleSubItemClick = (href) => {
-    setOpenDropdownIndex(null);
+    setOpenDropdownIndex(null); // Closes dropdown
+    setIsOpen(false); // Closes mobile menu
     window.open(href, "_blank");
   };
 
@@ -54,9 +55,9 @@ const Navbar = () => {
           <div className="flex items-center space-x-4">
             <a href="/">
               <img
-                src={logo}
+                src={logo1}
                 alt="Logo"
-                className="h-[60px] object-cover cursor-pointer"
+                className="h-[90px] object-cover cursor-pointer"
               />
             </a>
           </div>
@@ -117,7 +118,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden bg-white shadow-lg ${isOpen ? "open" : ""}`}
+        className={`md:hidden bg-white shadow-lg transition-all duration-300 ease-in-out ${
+          isOpen ? "max-h-screen" : "max-h-0 overflow-hidden"
+        }`}
       >
         <div className="px-4 pb-4">
           {navItems.map((item, index) => (
@@ -138,19 +141,23 @@ const Navbar = () => {
                     <span>{item.name}</span>
                     <FaChevronDown className="text-sm" />
                   </button>
-                  {openDropdownIndex === index && (
-                    <div className="pl-4">
-                      {item.subItems.map((subItem, subIndex) => (
-                        <a
-                          key={subIndex}
-                          onClick={() => handleSubItemClick(subItem.href)}
-                          className="block text-gray-800 py-2 hover:text-primaryGreen whitespace-nowrap"
-                        >
-                          {subItem.name}
-                        </a>
-                      ))}
-                    </div>
-                  )}
+                  <div
+                    className={`pl-4 transition-all duration-300 ease-in-out ${
+                      openDropdownIndex === index
+                        ? "max-h-screen"
+                        : "max-h-0 overflow-hidden"
+                    }`}
+                  >
+                    {item.subItems.map((subItem, subIndex) => (
+                      <a
+                        key={subIndex}
+                        onClick={() => handleSubItemClick(subItem.href)}
+                        className="block text-gray-800 py-2 hover:text-primaryGreen whitespace-nowrap"
+                      >
+                        {subItem.name}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

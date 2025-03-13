@@ -13,6 +13,8 @@ import product10 from "../assets/Products/img10.jpg";
 import product11 from "../assets/Products/img11.jpg";
 import product12 from "../assets/Products/img12.jpg";
 import product13 from "../assets/Products/img13.jpg";
+import product14 from "../assets/Products/img14.jpg";
+import product15 from "../assets/Products/img15.jpg";
 
 const Products = () => {
   const [categories, setCategories] = useState([
@@ -91,6 +93,12 @@ const Products = () => {
       name: "MK-888SV(LL)",
       category: "High specification type Screen Printer",
       image: product13,
+    },
+
+    {
+      name: "PLR-100",
+      category: "Laser Reflow",
+      image: product15,
     },
     // Add more products as needed
   ];

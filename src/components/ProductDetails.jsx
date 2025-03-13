@@ -121,7 +121,7 @@ const ProductDetails = ({ products }) => {
               </li>
             )}
 
-            {product.accommodatedPcbSize && (
+            {product.accommodatedPcbSizeSv && (
               <li>
                 <strong>Accommodated PCB Size:</strong>
                 <ul>

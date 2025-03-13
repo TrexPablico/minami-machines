@@ -12,6 +12,8 @@ import product10 from "../assets/Products/img10.jpg";
 import product11 from "../assets/Products/img11.jpg";
 import product12 from "../assets/Products/img12.jpg";
 import product13 from "../assets/Products/img13.jpg";
+import product14 from "../assets/Products/img14.jpg";
+import product15 from "../assets/Products/img15.jpg";
 
 import altproduct1 from "../assets/Products/img01.png";
 
@@ -44,33 +46,42 @@ const products = [
   {
     name: "MK-888SV(MA)",
     category: "High accuracy special printer",
-    image: product2,
+    image: "product2", // Replace with the actual import path
     type: ["M", "LL"],
+
     screenFrameSize: [
-      { X: "600mm", Y: "550mm", T: "25-30mm" },
-      { X: "650mm", Y: "550mm" },
-      { X: "750mm", Y: "650mm", T: "25-40mm" },
+      ["600mm", "550mm", "25-30mm"],
+      ["650mm", "550mm"],
+      ["750mm", "650mm", "25-40mm"],
     ],
-    accommodatedPcbSize: {
-      minimum: { X: "50mm", Y: "50mm", T: "0.4-2.5mm" },
-      maximum: { X: "330mm", Y: "250mm" },
-    },
-    standardPrinting: {
-      minimum: { X: "100mm", Y: "100mm", T: "0.4-2.5mm" },
-      maximum: { X: "540mm", Y: "500mm" },
-    },
-    twoStageSolderThicknessPrinting: {
-      minimum: { X: "100mm", Y: "100mm", T: "0.4-2.5mm" },
-      maximum: { X: "330mm", Y: "200mm" },
-    },
+
+    accommodatedPcbSizeMa: [
+      ["Minimum", "50mm", "50mm", "0.4-2.5mm"],
+      ["Maximum", "330mm", "250mm"],
+    ],
+
+    standardPrinting: [
+      ["Minimum", "100mm", "100mm", "0.4-2.5mm"],
+      ["Maximum", "540mm", "500mm"],
+    ],
+
+    twoStageSolderThicknessPrinting: [
+      ["Minimum", "100mm", "100mm", "0.4-2.5mm"],
+      ["Maximum", "330mm", "200mm"],
+    ],
+
     conveyorHeight: "900±50mm",
+
     overallSize: [
-      { D: "1235mm", W: "1570mm", H: "1572mm" },
-      { D: "2080mm", W: "1570mm", H: "1572mm" },
+      ["1235mm", "1570mm", "1572mm"],
+      ["2080mm", "1570mm", "1572mm"],
     ],
+
     weight: ["800kg", "950kg"],
+
     repetitiveAccuracy: "±0.015mm or less",
     powerUsed: "AC200V 2KVA 50/60Hz",
+
     features: [
       "Multiple substrates simultaneous printing function is added to the existing MK-888SV.",
       "Printing on multiple substrates can be performed simultaneously as a batch in high accuracy.",
@@ -571,6 +582,12 @@ const products = [
       'Operator friendly "Windows XP" is used as the OS, and the language can be selected from Japanese, English, and Chinese.',
       "By using the rotary squeegee, deterioration and consumption amount of solder can be suppressed. It contributes to manufacturing high-quality products and cost reduction.",
     ],
+  },
+
+  {
+    name: "PLR-100",
+    category: "Laser Reflow",
+    image: product15,
   },
 
   // Add more products as needed
