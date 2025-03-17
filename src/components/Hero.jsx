@@ -6,10 +6,10 @@ const Hero = () => {
     <div className="flex flex-col md:flex-row h-screen">
       <div className="w-full md:w-2/5 flex flex-col justify-center items-start p-8 bg-white">
         <div className="lg:mt-[-150px] md:mt-0">
-          <h1 className="text-7xl font-bold text-primaryGreen">MINAMI</h1>
-          <h1 className="text-4xl font-bold text-primaryGreen mt-4">
-            Machineries & Equipment Inc.
+          <h1 className="text-4xl font-bold text-primaryGreen">
+            Minami Machineries & Equipment Inc.
           </h1>
+
           <p className="text-lg text-gray-700 mt-4">
             At Minami, we meet society's needs through innovative surface
             mounting equipment. As electronic demands grow and values diversify,

@@ -14,6 +14,15 @@ import product12 from "../assets/Products/img12.jpg";
 import product13 from "../assets/Products/img13.jpg";
 
 import product15 from "../assets/Products/img15.png";
+import product16 from "../assets/Products/img16.jpg";
+import product17 from "../assets/Products/img17.jpg";
+import product18 from "../assets/Products/img18.jpg";
+import product19 from "../assets/Products/img19.jpg";
+import product20 from "../assets/Products/img20.jpg";
+import product21 from "../assets/Products/img21.jpg";
+import product22 from "../assets/Products/img22.jpg";
+import product23 from "../assets/Products/img23.jpg";
+import product24 from "../assets/Products/img24.jpg";
 
 import altproduct1 from "../assets/Products/img01.png";
 
@@ -588,6 +597,51 @@ const products = [
     name: "PLR-100",
     category: "Laser Reflow",
     image: product15,
+  },
+  {
+    name: "PCB Magazine Loader",
+    category: "",
+    image: product16,
+  },
+  {
+    name: "PCB Magazine Unloader",
+    category: "",
+    image: product17,
+  },
+  {
+    name: "AC/DC Motor & Driver",
+    category: "",
+    image: product18,
+  },
+  {
+    name: "Adhesive Tape",
+    category: "",
+    image: product19,
+  },
+  {
+    name: "Cotton Rolls",
+    category: "",
+    image: product20,
+  },
+  {
+    name: "Cotton Spring",
+    category: "",
+    image: product21,
+  },
+  {
+    name: "Hytalex Tape",
+    category: "",
+    image: product22,
+  },
+  {
+    name: "Ball Screw",
+    category: "",
+    image: product23,
+  },
+  {
+    name: "Stencils (Metal/Eform/Mesh)",
+    category: "",
+    image: product24,
   },
 
   // Add more products as needed
