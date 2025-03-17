@@ -600,47 +600,47 @@ const products = [
   },
   {
     name: "PCB Magazine Loader",
-    category: "",
+    category: "Loader / Unloader",
     image: product16,
   },
   {
     name: "PCB Magazine Unloader",
-    category: "",
+    category: "Loader / Unloader",
     image: product17,
   },
   {
     name: "AC/DC Motor & Driver",
-    category: "",
+    category: "Spare Parts",
     image: product18,
   },
   {
     name: "Adhesive Tape",
-    category: "",
+    category: "Spare Parts",
     image: product19,
   },
   {
     name: "Cotton Rolls",
-    category: "",
+    category: "Spare Parts",
     image: product20,
   },
   {
     name: "Conston Spring",
-    category: "",
+    category: "Spare Parts",
     image: product21,
   },
   {
     name: "Hytalex Tape",
-    category: "",
+    category: "Spare Parts",
     image: product22,
   },
   {
     name: "Ball Screw",
-    category: "",
+    category: "Spare Parts",
     image: product23,
   },
   {
     name: "Stencils (Metal/Eform/Mesh)",
-    category: "",
+    category: "Spare Parts",
     image: product24,
   },
 

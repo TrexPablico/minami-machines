@@ -31,6 +31,9 @@ const Products = () => {
     { title: "Ball Placer with Screen Printer", active: false },
     { title: "Ball Inspection & Rework", active: false },
     { title: "Laser Reflow", active: false },
+    { title: "Spare Parts", active: false },
+    { title: "Loader / Unloader", active: false },
+
     // Add more categories as needed
   ]);
 
@@ -111,47 +114,47 @@ const Products = () => {
     },
     {
       name: "PCB Magazine Loader",
-      category: "Laser Reflow",
+      category: "Loader / Unloader",
       image: product16,
     },
     {
       name: "PCB Magazine Unloader",
-      category: "Laser Reflow",
+      category: "Loader / Unloader",
       image: product17,
     },
     {
       name: "AC/DC Motor & Driver",
-      category: "",
+      category: "Spare Parts",
       image: product18,
     },
     {
       name: "Adhesive Tape",
-      category: "",
+      category: "Spare Parts",
       image: product19,
     },
     {
       name: "Cotton Rolls",
-      category: "",
+      category: "Spare Parts",
       image: product20,
     },
     {
       name: "Conston Spring",
-      category: "",
+      category: "Spare Parts",
       image: product21,
     },
     {
       name: "Hytalex Tape",
-      category: "",
+      category: "Spare Parts",
       image: product22,
     },
     {
       name: "Ball Screw",
-      category: "",
+      category: "Spare Parts",
       image: product23,
     },
     {
       name: "Stencils (Metal/Eform/Mesh)",
-      category: "",
+      category: "Spare Parts",
       image: product24,
     },
     // Add more products as needed
