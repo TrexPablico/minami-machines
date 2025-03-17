@@ -3,9 +3,9 @@ import heroimg from "../assets/Hero/hero.jpg";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row h-screen">
-      <div className="w-full md:w-2/5 flex flex-col justify-center items-start p-8 bg-white">
-        <div className="lg:mt-[-150px] md:mt-0">
+    <div className="flex flex-col md:flex-row h-screen ">
+      <div className=" w-full md:w-2/5 flex flex-col justify-center items-start p-8 bg-white">
+        <div className="lg:mt-[-150px] md:mt-0 ">
           <h1 className="text-4xl font-bold text-primaryGreen">
             Minami Machineries & Equipment Inc.
           </h1>
