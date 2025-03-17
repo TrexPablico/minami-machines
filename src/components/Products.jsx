@@ -135,7 +135,7 @@ const Products = () => {
       image: product20,
     },
     {
-      name: "Cotton Spring",
+      name: "Conston Spring",
       category: "",
       image: product21,
     },
