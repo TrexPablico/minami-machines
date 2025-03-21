@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const ProductDetails = ({ products }) => {
@@ -8,6 +8,9 @@ const ProductDetails = ({ products }) => {
   if (!product) {
     return <p>Product not found</p>;
   }
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center mt-20 px-5">

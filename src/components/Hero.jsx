@@ -17,9 +17,11 @@ const Hero = () => {
             prioritize environmental care, creating eco-friendly products like
             Pb-free screen printers. For details, see our "Eco-Friendly" page.
           </p>
-          <button className="mt-6 px-6 py-3 bg-primaryYellow text-white rounded-lg text-lg hover:bg-primaryGreen">
-            Learn More
-          </button>
+          <a href="#about">
+            <button className="mt-6 px-6 py-3 bg-primaryYellow text-white rounded-lg text-lg hover:bg-primaryGreen">
+              Learn More
+            </button>
+          </a>
         </div>
       </div>
       <div className="w-full md:w-3/5 relative">

@@ -24,6 +24,16 @@ import product21 from "../assets/Products/img21.jpg";
 import product22 from "../assets/Products/img22.jpg";
 import product23 from "../assets/Products/img23.jpg";
 import product24 from "../assets/Products/img24.jpg";
+import product25 from "../assets/Products/img25.jpeg";
+import product26 from "../assets/Products/img26.jpeg";
+import product27 from "../assets/Products/img27.jpeg";
+import product28 from "../assets/Products/img28.jpeg";
+import product29 from "../assets/Products/img29.jpeg";
+import product30 from "../assets/Products/img30.jpeg";
+import product31 from "../assets/Products/img31.jpeg";
+import product32 from "../assets/Products/img32.jpeg";
+import product33 from "../assets/Products/img33.jpeg";
+import product34 from "../assets/Products/img34.jpeg";
 
 const Products = () => {
   const [categories, setCategories] = useState([
@@ -33,6 +43,8 @@ const Products = () => {
     { title: "Laser Reflow", active: false },
     { title: "Spare Parts", active: false },
     { title: "Loader / Unloader", active: false },
+    { title: "Conveyor", active: false },
+    { title: "Microscope", active: false },
 
     // Add more categories as needed
   ]);
@@ -156,6 +168,57 @@ const Products = () => {
       name: "Stencils (Metal/Eform/Mesh)",
       category: "Spare Parts",
       image: product24,
+    },
+    {
+      name: "Alpine Conveyor",
+      category: "Conveyor",
+      image: product25,
+    },
+    {
+      name: "Inclined Conveyor",
+      category: "Conveyor",
+      image: product26,
+    },
+    {
+      name: "Spiral Conveyor",
+      category: "Conveyor",
+      image: product27,
+    },
+    {
+      name: "Wedge Conveyor",
+      category: "Conveyor",
+      image: product28,
+    },
+    {
+      name: "Dovetails",
+      category: "Microscope",
+      image: product29,
+    },
+
+    {
+      name: "Measuring Scopes",
+      category: "Microscope",
+      image: product30,
+    },
+    {
+      name: "Airpits",
+      category: "Microscope",
+      image: product31,
+    },
+    {
+      name: "Lens",
+      category: "Microscope",
+      image: product32,
+    },
+    {
+      name: "IC Transport Tray",
+      category: "",
+      image: product33,
+    },
+    {
+      name: "Facilea",
+      category: "",
+      image: product34,
     },
     // Add more products as needed
   ];

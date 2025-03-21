@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "#about" },
     { name: "Products", href: "#products" },
-    {
+    /*{
       name: "Affiliates",
       href: "#",
       subItems: [
@@ -29,7 +29,7 @@ const Navbar = () => {
           href: "https://mirucoptical.com/",
         },
       ],
-    },
+    },*/
     { name: "Contact Us", href: "#contact" },
   ];
 
@@ -162,9 +162,11 @@ const Navbar = () => {
               )}
             </div>
           ))}
-          <button className="w-40 bg-primaryYellow text-white px-4 py-2 rounded hover:bg-primaryGreen mt-4">
-            Call Us
-          </button>
+          <a href="tel:0495441684">
+            <button className="w-40 bg-primaryYellow text-white px-4 py-2 rounded hover:bg-primaryGreen mt-4">
+              Call Us
+            </button>
+          </a>
         </div>
       </div>
     </nav>
