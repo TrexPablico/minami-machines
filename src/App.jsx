@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProductDetails from "./components/ProductDetails";
 import products from "./data/products";
+import MinamiService from "./components/MinamiService";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <>
               <Hero />
               <About />
+              <MinamiService />
               <Products products={products} />
               {/* <Services /> */}
               <Contact />

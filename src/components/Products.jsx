@@ -37,6 +37,7 @@ import product34 from "../assets/Products/img34.jpeg";
 import product35 from "../assets/Products/img35.jpg";
 import product36 from "../assets/Products/img36.jpg";
 import product37 from "../assets/Products/img37.jpg";
+import product38 from "../assets/Products/img38.jpg";
 
 const Products = () => {
   const [categories, setCategories] = useState([
@@ -237,6 +238,11 @@ const Products = () => {
       name: "Epoxy Floor Coating System",
       category: "",
       image: product37,
+    },
+    {
+      name: "Ultracote Paints & Coating",
+      category: "",
+      image: product38,
     },
     // Add more products as needed
   ];
