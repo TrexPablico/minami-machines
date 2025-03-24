@@ -34,6 +34,9 @@ import product31 from "../assets/Products/img31.jpeg";
 import product32 from "../assets/Products/img32.jpeg";
 import product33 from "../assets/Products/img33.jpeg";
 import product34 from "../assets/Products/img34.jpeg";
+import product35 from "../assets/Products/img35.jpg";
+import product36 from "../assets/Products/img36.jpg";
+import product37 from "../assets/Products/img37.jpg";
 
 const Products = () => {
   const [categories, setCategories] = useState([
@@ -219,6 +222,21 @@ const Products = () => {
       name: "Facilea",
       category: "",
       image: product34,
+    },
+    {
+      name: "Structural Epoxies",
+      category: "",
+      image: product35,
+    },
+    {
+      name: "Protective Coatings",
+      category: "",
+      image: product36,
+    },
+    {
+      name: "Epoxy Floor Coating System",
+      category: "",
+      image: product37,
     },
     // Add more products as needed
   ];

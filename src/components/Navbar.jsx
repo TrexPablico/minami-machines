@@ -11,25 +11,27 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "About Us", href: "#about" },
     { name: "Products", href: "#products" },
-    /*{
+    {
       name: "Affiliates",
-      href: "#",
+      //href: "#",
       subItems: [
         {
           name: "Mishima Kosan Co.",
-          href: "https://en.mishimakosan.com/business/product/",
+          // href: "https://en.mishimakosan.com/business/product/",
         },
-        { name: "CKD", href: "https://www.ckd.co.jp/en/productinfo/" },
+        {
+          name: "CKD", //href: "https://www.ckd.co.jp/en/productinfo/"
+        },
         {
           name: "Kano Engineering Co., Ltd.",
-          href: "https://kano-web.co.jp/en/product.html",
+          //href: "https://kano-web.co.jp/en/product.html",
         },
         {
           name: "Miruc Optical Co., Ltd",
-          href: "https://mirucoptical.com/",
+          // href: "https://mirucoptical.com/",
         },
       ],
-    },*/
+    },
     { name: "Contact Us", href: "#contact" },
   ];
 
@@ -85,7 +87,7 @@ const Navbar = () => {
                         {item.subItems.map((subItem, subIndex) => (
                           <a
                             key={subIndex}
-                            onClick={() => handleSubItemClick(subItem.href)}
+                            //onClick={() => handleSubItemClick(subItem.href)}
                             className="block px-4 py-2 text-gray-800 hover:bg-primaryGreen hover:text-white whitespace-nowrap"
                           >
                             {subItem.name}
