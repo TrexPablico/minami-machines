@@ -49,6 +49,7 @@ const Products = () => {
     { title: "Loader / Unloader", active: false },
     { title: "Conveyor", active: false },
     { title: "Microscope", active: false },
+    { title: "Paints & Coatings", active: false },
 
     // Add more categories as needed
   ]);
@@ -226,22 +227,22 @@ const Products = () => {
     },
     {
       name: "Structural Epoxies",
-      category: "",
+      category: "Paints & Coatings",
       image: product35,
     },
     {
       name: "Protective Coatings",
-      category: "",
+      category: "Paints & Coatings",
       image: product36,
     },
     {
       name: "Epoxy Floor Coating System",
-      category: "",
+      category: "Paints & Coatings",
       image: product37,
     },
     {
       name: "Ultracote Paints & Coating",
-      category: "",
+      category: "Paints & Coatings",
       image: product38,
     },
     // Add more products as needed

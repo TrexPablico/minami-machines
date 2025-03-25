@@ -709,22 +709,22 @@ const products = [
   },
   {
     name: "Structural Epoxies",
-    category: "",
+    category: "Paints & Coatings",
     image: product35,
   },
   {
     name: "Protective Coatings",
-    category: "",
+    category: "Paints & Coatings",
     image: product36,
   },
   {
     name: "Epoxy Floor Coating System",
-    category: "",
+    category: "Paints & Coatings",
     image: product37,
   },
   {
     name: "Ultracote Paints & Coating",
-    category: "",
+    category: "Paints & Coatings",
     image: product38,
   },
   // Add more products as needed

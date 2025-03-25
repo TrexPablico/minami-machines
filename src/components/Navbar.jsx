@@ -30,6 +30,10 @@ const Navbar = () => {
           name: "Miruc Optical Co., Ltd",
           // href: "https://mirucoptical.com/",
         },
+        {
+          name: "Ultracote Paints",
+          // href: "https://mirucoptical.com/",
+        },
       ],
     },
     { name: "Contact Us", href: "#contact" },
